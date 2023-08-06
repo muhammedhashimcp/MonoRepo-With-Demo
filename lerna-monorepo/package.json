@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "lerna": "^7.1.4"
+  },
+  "name": "lerna-monorepo",
+  "description": "create a folder for project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+	"lerna": "^7.1.4"
+    
+  },
+  "scripts": {
+	  "test": "lerna run test --scope=web-client",
+	"start": "lerna run start --scope=web-client",
+	"new-version":"lerna version --conventional-commits --yes",
+	"diff":"lerna diff"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
